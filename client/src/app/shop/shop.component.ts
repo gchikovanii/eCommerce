@@ -11,7 +11,7 @@ import { ShopService } from './shop.service';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
-  @ViewChild('search') searchTerm: ElementRef | any;
+  @ViewChild('search',{static: false}) searchTerm: ElementRef | any;
   products: IProduct[] | any;
   brands: IBrand[] | any;
   types: IType[] | any;
