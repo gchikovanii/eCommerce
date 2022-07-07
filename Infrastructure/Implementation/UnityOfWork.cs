@@ -12,7 +12,7 @@ namespace Infrastructure.Implementation
     public class UnityOfWork : IUnityOfWork
     {
         private readonly StoreContext _context;
-        private Hashtable _repositories;
+        private Hashtable? _repositories;
         public UnityOfWork(StoreContext context)
         {
             _context = context;

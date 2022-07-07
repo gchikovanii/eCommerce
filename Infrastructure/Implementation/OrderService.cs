@@ -12,16 +12,11 @@ namespace Infrastructure.Implementation
     public class OrderService : IOrderService
     {
         private readonly IBasketRepository _basketRepository;
-        private readonly IRepository<Product> _productRepository;
-        private readonly IRepository<Order> _orderRepository;
-        private readonly IRepository<DeliveryMethod> _deliveryMethodRepository;
-        
-        public OrderService(IBasketRepository basketRepository, IRepository<Product> productRepository,
-        IRepository<Order> orderRepository, IRepository<DeliveryMethod> deliveryMethodRepository)
+        private readonly IUnityOfWork _unitOfWork;
+
+        public OrderService(IBasketRepository basketRepository, IUnityOfWork unitOfWork)
         {
-            _deliveryMethodRepository = deliveryMethodRepository;
-            _orderRepository = orderRepository;
-            _productRepository = productRepository;
+            _unitOfWork = unitOfWork;
             _basketRepository = basketRepository;
         }
         public async Task<Order> CreateOrderAsync(string buyerEmail, int deliveryMethodId, string basketId, Address shippingAddress)
@@ -32,20 +27,20 @@ namespace Infrastructure.Implementation
             var items = new List<OrderItem>();
             foreach (var item in basket.Items)
             {
-                var productItem = await _productRepository.GetByIdAsync(item.Id);
-                var itemOrdered = new ProctItemOrdered(productItem.Id,productItem.Name,productItem.PictureUrl);
-                var orderItem = new OrderItem(itemOrdered, productItem.Price , item.Quantity);
+                 var productItem = await _unitOfWork.Repositoryy<Product>().GetByIdAsync(item.Id);
+                var itemOrdered = new ProctItemOrdered(productItem.Id, productItem.Name, productItem.PictureUrl);
+                var orderItem = new OrderItem(itemOrdered, productItem.Price, item.Quantity);
                 items.Add(orderItem);
             }
-            var deliveryMethod = await _deliveryMethodRepository.GetByIdAsync(deliveryMethodId);
+            var deliveryMethod = await _unitOfWork.Repositoryy<DeliveryMethod>().GetByIdAsync(deliveryMethodId);
             var subtotal = items.Sum(item => item.Price * item.Quantity);
             //create order
             var order = new Order(items,buyerEmail,shippingAddress,deliveryMethod,subtotal);
-            // _unitOfWork.Repositoryy<Order>().Add(order);
-            // var results = await _unitOfWork.Complete();
-            // if(results <= 0)
-            //     return null;
-            // await _basketRepository.DelteBasketAsync(basketId);    
+            _unitOfWork.Repositoryy<Order>().Add(order);
+            var results = await _unitOfWork.Complete();
+            if(results <= 0)
+                return null;
+            await _basketRepository.DelteBasketAsync(basketId);    
             return order;
         }
 
