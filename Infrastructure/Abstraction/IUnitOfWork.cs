@@ -6,9 +6,9 @@ using Core.Entities;
 
 namespace Infrastructure.Abstraction
 {
-    public interface IUnityOfWork : IDisposable
+    public interface IUnitOfWork : IDisposable
     {
-        IRepository<TEntity> Repositoryy<TEntity>() where TEntity : BaseEntity;
+        IRepository<TEntity> Repositorry<TEntity>() where TEntity : BaseEntity;
         Task<int> Complete();
 
     }

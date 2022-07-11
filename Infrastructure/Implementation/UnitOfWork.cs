@@ -9,14 +9,15 @@ using Infrastructure.Data;
 
 namespace Infrastructure.Implementation
 {
-    public class UnityOfWork : IUnityOfWork
+    public class UnitOfWork : IUnitOfWork
     {
-        private readonly StoreContext _context;
-        private Hashtable? _repositories;
-        public UnityOfWork(StoreContext context)
+       private readonly StoreContext _context;
+        private Hashtable _repositories;
+        public UnitOfWork(StoreContext context)
         {
             _context = context;
         }
+
         public async Task<int> Complete()
         {
             return await _context.SaveChangesAsync();
@@ -27,9 +28,9 @@ namespace Infrastructure.Implementation
             _context.Dispose();
         }
 
-        public IRepository<TEntity> Repositoryy<TEntity>() where TEntity : BaseEntity
+        public IRepository<TEntity> Repositorry<TEntity>() where TEntity : BaseEntity
         {
-           if(_repositories == null) _repositories = new Hashtable();
+            if(_repositories == null) _repositories = new Hashtable();
 
             var type = typeof(TEntity).Name;
 

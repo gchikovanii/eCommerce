@@ -42,11 +42,11 @@ namespace Infrastructure.Data
                     await context.SaveChangesAsync();
                 }
                 if(!context.DeliveryMethods.Any()){
-                    var deliveryData = await File.ReadAllTextAsync("../Infrastructure/Data/SeedData/delivery.json");
+                    var deliveryData = await File.ReadAllTextAsync("../Infrastructure/Data/SeedData/deliverry.json");
                     var methods = JsonSerializer.Deserialize<List<DeliveryMethod>>(deliveryData);
                     foreach (var item in methods)
                     {
-                        await context.DeliveryMethods.AddAsync(item);
+                        context.DeliveryMethods.Add(item);
                     }
                     await context.SaveChangesAsync();
                 }

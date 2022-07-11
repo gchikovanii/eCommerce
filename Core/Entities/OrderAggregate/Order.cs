@@ -11,7 +11,8 @@ namespace Core.Entities.OrderAggregate
         {
             
         }
-        public Order(IReadOnlyList<OrderItem> orderItems, string buyerEmail, Address shippingAddress, DeliveryMethod deliveryMethod, decimal subtotal)
+        public Order(IReadOnlyList<OrderItem> orderItems, string buyerEmail,
+         Address shippingAddress, DeliveryMethod deliveryMethod, decimal subtotal)
         {
             BuyerEmail = buyerEmail;
             ShippingAddress = shippingAddress;
@@ -27,7 +28,7 @@ namespace Core.Entities.OrderAggregate
         public IReadOnlyList<OrderItem> OrderItems { get; set; }
         public decimal Subtotal { get; set; }
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
-        public string PaymentIntentId { get; set; }
+        public string? PaymentIntentId { get; set; } =  "This is an id";
         public decimal GetTotal(){
             return Subtotal +  DeliveryMethod.Price;
         }

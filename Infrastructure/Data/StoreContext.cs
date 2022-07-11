@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Core.Entities;
 using Core.Entities.OrderAggregate;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Infrastructure.Data
 {
@@ -31,9 +32,14 @@ namespace Infrastructure.Data
                 foreach (var entityType in modelBuilder.Model.GetEntityTypes())
                 {
                     var properties = entityType.ClrType.GetProperties().Where(i => i.PropertyType == typeof(decimal));
+                    var dateTimepProperties = entityType.ClrType.GetProperties().Where(i => i.PropertyType == typeof(DateTimeOffset));
                     foreach (var item in properties)
                     {
                         modelBuilder.Entity(entityType.Name).Property(item.Name).HasConversion<double>();
+                    }
+                    foreach (var property in dateTimepProperties)
+                    {
+                        modelBuilder.Entity(entityType.Name).Property(property.Name).HasConversion(new DateTimeOffsetToBinaryConverter());
                     }
                 }
             }
