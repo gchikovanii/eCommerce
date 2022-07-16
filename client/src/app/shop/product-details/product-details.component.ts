@@ -35,13 +35,13 @@ export class ProductDetailsComponent implements OnInit {
   }
 
 
-  loadProduct(){
-    this.shopService.getProduct(this.activateRoute.snapshot.paramMap.get('id')).subscribe(product =>{
+  loadProduct() {
+    this.shopService.getProduct(+this.activateRoute.snapshot.paramMap.get('id')).subscribe(product => {
       this.product = product;
-      this.bcService.set('@productDetails',product.name)
-    },error => {
-      console.log(error);     
-    })
+      this.bcService.set('@productDetails', product.name);
+    }, error => {
+      console.log(error);
+    });
   }
 
 }

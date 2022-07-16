@@ -1,0 +1,24 @@
+.list-group-item{
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+
+    &:focus{
+        outline: none;
+    }
+
+    &:active{
+        border-radius: 10px;
+    }
+
+    &:hover{
+        color: white;
+        background-color: #caf0f8;
+    }
+
+    &:focus{
+        color: white;
+        border-radius: 10px;
+    }
+
+}

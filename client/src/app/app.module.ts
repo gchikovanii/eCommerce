@@ -11,7 +11,7 @@ import { ErrorInteceptor } from './core/interceptors/error.inteceptor';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './core/interceptors/loading.inteceptors';
 import { JwtInteceptor } from './core/interceptors/jwt.inteceptor';
-import { OrderDetailedComponent } from './orders/order-detailed/order-detailed.component';
+
 
 @NgModule({
   declarations: [
@@ -24,9 +24,8 @@ import { OrderDetailedComponent } from './orders/order-detailed/order-detailed.c
     HttpClientModule,
     CoreModule,
     HomeModule,
-    CoreModule,
     NgxSpinnerModule
-  ],
+    ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInteceptor, multi: true},
     {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true},

@@ -1,6 +1,6 @@
 <div class="container mt-5">
-    <div *ngIf="(basket$ | async) === null">
-        <p>There are no items in basket</p>
+    <div class="d-flex justify-content-center" *ngIf="(basket$ | async) === null">
+        <img style="width: 35%; height:400px" src="assets/images/orderNotFound.png" alt="empty">
     </div>
     <div *ngIf="(basket$ | async) as basket">
         <div class="pb-5">
@@ -22,7 +22,7 @@
                             [subtotal]="(basketTotals$ | async).subtotal" 
                             [total]="(basketTotals$ | async).total">
                         </app-order-totals>
-                        <a routerLink="/checkout" class="btn btn-outline-primary py-2 btn-block">
+                        <a routerLink="/checkout" class="btn btn-outline-primary ml-4">
                             Proceed to checkout
                         </a>
                     </div>
