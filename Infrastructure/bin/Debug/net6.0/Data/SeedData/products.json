@@ -1,0 +1,146 @@
+[
+  {
+    "Name": "Nike orange boots",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 200,
+    "PictureUrl": "images/products/sb-ang1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Nike gray boots",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 150,
+    "PictureUrl": "images/products/sb-ang2.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Adidas blue Twiliglight",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 180,
+    "PictureUrl": "images/products/sb-core1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Adidas super boots",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 300,
+    "PictureUrl": "images/products/sb-core2.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Puma X boots",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 250,
+    "PictureUrl": "images/products/sb-react1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "New Balanace Shoes",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 120,
+    "PictureUrl": "images/products/sb-ts1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "Addidas Blue Hat",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 10,
+    "PictureUrl": "images/products/hat-core1.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Green Puma Woolen Hat",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 8,
+    "PictureUrl": "images/products/hat-react1.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Purple Puma Woolen Hat",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 15,
+    "PictureUrl": "images/products/hat-react2.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Blue Under Armour Gloves",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 18,
+    "PictureUrl": "images/products/glove-code1.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Green Under Armour Gloves",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 15,
+    "PictureUrl": "images/products/glove-code2.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Purple Puma Gloves",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 16,
+    "PictureUrl": "images/products/glove-react1.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Green Puma Gloves",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 14,
+    "PictureUrl": "images/products/glove-react2.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Reebok Red Boots",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 250,
+    "PictureUrl": "images/products/boot-redis1.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 6
+  },
+  {
+    "Name": "Adidas Red Boots",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 189.99,
+    "PictureUrl": "images/products/boot-core2.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Adidas Purple Boots",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 199.99,
+    "PictureUrl": "images/products/boot-core1.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Nike Purple Boots",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 150,
+    "PictureUrl": "images/products/boot-ang2.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Nike Blue Boots",
+    "Description": "A new color twist on 2 iconic Air Jordan 11 colorways, the Air Jordan 11 Retro Low steps out with deluxe materials and full-length Air-Sole cushioning. Remade with signature precision, it combines elements from the 'Concord' and 'Bred' colorways.",
+    "Price": 180,
+    "PictureUrl": "images/products/boot-ang1.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  }
+]

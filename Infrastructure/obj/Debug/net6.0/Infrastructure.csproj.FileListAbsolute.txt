@@ -13,3 +13,7 @@ D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Infrastructure\obj\Debug\net
 D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Infrastructure\bin\Debug\net6.0\Core.dll
 D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Infrastructure\bin\Debug\net6.0\Core.pdb
 D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Infrastructure\bin\Debug\net6.0\Data\SeedData\brands.json
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Infrastructure\bin\Debug\net6.0\Data\SeedData\deliverry.json
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Infrastructure\bin\Debug\net6.0\Data\SeedData\products.json
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Infrastructure\bin\Debug\net6.0\Data\SeedData\types.json

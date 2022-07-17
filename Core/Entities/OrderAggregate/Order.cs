@@ -29,7 +29,7 @@ namespace Core.Entities.OrderAggregate
         public IReadOnlyList<OrderItem> OrderItems { get; set; }
         public decimal Subtotal { get; set; }
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
-        public string? PaymentIntentId { get; set; } 
+        public string PaymentIntentId { get; set; } = "Intent Id";
         public decimal GetTotal(){
             return Subtotal +  DeliveryMethod.Price;
         }

@@ -8,9 +8,10 @@ import { CoreModule } from './core/core.module';
 import { ShopModule } from './shop/shop.module';
 import { HomeModule } from './home/home.module';
 import { ErrorInteceptor } from './core/interceptors/error.inteceptor';
-import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './core/interceptors/loading.inteceptors';
 import { JwtInteceptor } from './core/interceptors/jwt.inteceptor';
+import { NgxSpinner } from 'ngx-bootstrap-spinner/lib/ngx-spinner.enum';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 
 @NgModule({

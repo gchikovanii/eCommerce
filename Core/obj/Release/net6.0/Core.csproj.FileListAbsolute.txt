@@ -1,0 +1,12 @@
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\bin\Release\net6.0\Core.deps.json
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\bin\Release\net6.0\Core.dll
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\bin\Release\net6.0\Core.pdb
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\obj\Release\net6.0\Core.csproj.AssemblyReference.cache
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\obj\Release\net6.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\obj\Release\net6.0\Core.AssemblyInfoInputs.cache
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\obj\Release\net6.0\Core.AssemblyInfo.cs
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\obj\Release\net6.0\Core.csproj.CoreCompileInputs.cache
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\obj\Release\net6.0\Core.dll
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\obj\Release\net6.0\refint\Core.dll
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\obj\Release\net6.0\Core.pdb
+D:\Full-Stack\Visual studio 2022\Projects\eCommerce\Core\obj\Release\net6.0\ref\Core.dll

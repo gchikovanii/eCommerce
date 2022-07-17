@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "ShortName": "Standard",
+    "Description": "2-5 Days",
+    "DeliveryTime": "2-5 Days",
+    "Price": 5
+  },
+  {
+    "Id": 2,
+    "ShortName": "Fast Delivery",
+    "Description": "1-2 Days",
+    "DeliveryTime": "1-2 Days",
+    "Price": 10
+  },
+  {
+    "Id": 3,
+    "ShortName": "Extra-Fast",
+    "Description": "5-10 Days",
+    "DeliveryTime": "5-10 Days",
+    "Price": 15
+  },
+  {
+    "Id": 4,
+    "ShortName": "Take Away",
+    "Description": "After 5 Hours",
+    "DeliveryTime": "After 5 Hours",
+    "Price": 0
+  }
+]
